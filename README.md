@@ -1,6 +1,6 @@
-# hizonchristian
+# Portfolio V2
 
-A new Flutter project.
+A new Flutter portfolio.
 
 ## Getting Started
 

@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "personal-portfolio-36d74"
+  },
+  "targets": {
+    "personal-portfolio-36d74": {
+      "hosting": {
+        "prod": [
+          "christianhizon"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
