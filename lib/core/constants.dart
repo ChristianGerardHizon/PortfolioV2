@@ -28,9 +28,9 @@ List<Project> defProjects = [
     ],
   ),
   Project(
-    name: 'JuanRide',
+    name: 'Juan Ride',
     description:
-        '''An ordering system that was made to automate their manual process. was in charge of developing several features on their Shopify website and custom order management website.''',
+        '''An ordering system that was made to automate their manual process. Was in charge of developing several features on their Shopify website and custom order management website.''',
     projectURL: '',
     websiteURL: 'https://www.bacolodlifestyle.com/juan-ride-launches-website',
     technologies: [
