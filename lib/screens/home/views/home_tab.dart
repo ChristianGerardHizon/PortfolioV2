@@ -70,11 +70,10 @@ class HomeTab extends StatelessWidget {
                         text: TextSpan(
                           text: Strings.introAbout,
                           style: GoogleFonts.roboto(
-                            // color: AppColors().textLight,
+                            color: Colors.grey[600],
                             letterSpacing: 1,
                             height: 1.5,
                             fontSize: 18,
-                            color: Colors.grey,
                           ),
                           children: <TextSpan>[
                             TextSpan(
