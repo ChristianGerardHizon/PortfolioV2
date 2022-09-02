@@ -1,6 +1,5 @@
 import 'dart:developer';
 
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -64,11 +63,11 @@ class _ProjectItemMobileState extends State<ProjectItemMobile> {
                           children: [
                             Icon(
                               Icons.folder,
-                              size: 70,
+                              size: 50,
                               color: color,
                             ),
                             IconButton(
-                              iconSize: 40,
+                              iconSize: 30,
                               onPressed: () {},
                               icon: Icon(
                                 Icons.open_in_new,
@@ -84,7 +83,7 @@ class _ProjectItemMobileState extends State<ProjectItemMobile> {
                             color: isHovering ? color : null,
                             letterSpacing: 1,
                             height: 1.5,
-                            fontSize: 28,
+                            fontSize: 18,
                             fontWeight: FontWeight.w800,
                           ),
                         ),
@@ -96,7 +95,7 @@ class _ProjectItemMobileState extends State<ProjectItemMobile> {
                             // color: AppColors().textLight,
                             letterSpacing: 1,
                             height: 1.5,
-                            fontSize: 18,
+                            fontSize: 13,
                           ),
                         ),
                       ],
@@ -122,7 +121,6 @@ class _ProjectItemMobileState extends State<ProjectItemMobile> {
                         .toList(),
                   ),
                 ),
-                const SizedBox(height: 10),
               ],
             ),
           ),

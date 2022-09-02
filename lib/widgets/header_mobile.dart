@@ -1,14 +1,25 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:scroll_to_index/scroll_to_index.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../core/core.dart';
 
 class HeaderMobile extends StatelessWidget {
   const HeaderMobile({super.key});
 
-  void _scrollTo(int index) {
-    getIt<AutoScrollController>().scrollToIndex(
+  Future<void> _scrollTo(int index) async {
+    if (index == -1) {
+      try {
+        await launchUrl(Uri.parse(defResumeURL));
+      } catch (e) {
+        log(e.toString());
+      }
+      return;
+    }
+
+    await getIt<AutoScrollController>().scrollToIndex(
       index,
       preferPosition: AutoScrollPosition.begin,
     );
@@ -57,7 +68,7 @@ class HeaderMobile extends StatelessWidget {
                 ),
               ),
               const PopupMenuItem(
-                value: 4,
+                value: -1,
                 child: ListTile(
                   dense: true,
                   trailing: Icon(Icons.download),

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import '../../../core/core.dart';
 import '../widgets/widgets.dart';
@@ -38,6 +38,12 @@ class ProjectMobile extends StatelessWidget {
                 fontSize: 25,
               ),
             ),
+            Container(
+              height: 0.5,
+              margin: const EdgeInsets.only(left: 15),
+              width: Constants.getWidth(context) * 0.3,
+              color: Colors.grey,
+            )
           ],
         ),
         const SizedBox(height: 10),
@@ -68,7 +74,7 @@ class ProjectMobile extends StatelessWidget {
             );
           },
         ),
-        // const SizedBox(height: 40),
+        const SizedBox(height: 80),
       ],
     );
   }

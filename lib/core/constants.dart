@@ -6,7 +6,7 @@ List<Project> defProjects = [
   Project(
     name: 'TrudeLizares',
     description:
-        '''A clothing website that uses Shopify. Did the maintenance, development and updating of the website layout and features''',
+        '''A clothing website that uses Shopify. Maintained and developed the website's layout and features. Also was in charge of managing the website's content''',
     projectURL: '',
     websiteURL: 'https://trudelizares.com',
     technologies: [
@@ -30,7 +30,7 @@ List<Project> defProjects = [
   Project(
     name: 'JuanRide',
     description:
-        'An ordering system that was made to automate their manual process. For Tasked with deveploing the features on their Shopify website and custom order management website.',
+        '''An ordering system that was made to automate their manual process. was in charge of developing several features on their Shopify website and custom order management website.''',
     projectURL: '',
     websiteURL: 'https://www.bacolodlifestyle.com/juan-ride-launches-website',
     technologies: [
@@ -42,7 +42,7 @@ List<Project> defProjects = [
   Project(
     name: 'Panebakery',
     description:
-        'Bakery Shop in the US. Maintained and did some minor ui changes and  bug fixes for the ordering setup.',
+        '''Bakery Shop in the US. Maintained and did some ui changes and  bug fixes for the ordering setup.''',
     projectURL: '',
     websiteURL: 'http://www.panebakery.com',
     technologies: [
@@ -52,7 +52,7 @@ List<Project> defProjects = [
     ],
   ),
   Project(
-    name: 'Natures Village Resort',
+    name: '''Nature's Village Resort''',
     description:
         'A simple website for the Resort in Talisay. Maintained and handled the changes for the website layouts.',
     projectURL: '',
@@ -75,31 +75,19 @@ List<Project> defProjects = [
       Technology.angular,
     ],
   ),
-  Project(
-    name: 'Match A Service',
-    description:
-        'A small proof of concept website and application for the New Zealand company. Connects service workers with customers and help with setting up of appointments and payment.',
-    projectURL: '',
-    websiteURL: 'https://www.facebook.com/MatchingServiceNeeds',
-    technologies: [
-      Technology.ionic,
-      Technology.firebase,
-      Technology.angular,
-    ],
-  ),
-  Project(
-    name: 'Mushu',
-    description:
-        'An mobile application for a local restaurant in Bacolod PH. Allows the user to order and pay for their orders through the app.',
-    projectURL: '',
-    websiteURL:
-        'https://play.google.com/store/apps/details?id=com.stratiumsoftwaregroup.opencartmobile&hl=en_CA&gl=US',
-    technologies: [
-      Technology.flutter,
-      Technology.opencart,
-      Technology.php,
-    ],
-  ),
+  // Project(
+  //   name: 'Mushu',
+  //   description:
+  //       'An mobile application for a local restaurant in Bacolod PH. Allows the user to order and pay for their orders through the app.',
+  //   projectURL: '',
+  //   websiteURL:
+  //       'https://play.google.com/store/apps/details?id=com.stratiumsoftwaregroup.opencartmobile&hl=en_CA&gl=US',
+  //   technologies: [
+  //     Technology.flutter,
+  //     Technology.opencart,
+  //     Technology.php,
+  //   ],
+  // ),
 ];
 
 List<Experience> defExperience = [
@@ -138,7 +126,7 @@ List<Experience> defExperience = [
 
 const String defEmail = 'christiangerardhizon@gmail.com';
 const String defResumeURL =
-    'https://docs.google.com/document/d/1EH_UDgoAEKwabrxm0fgmiK0WJVCXp0hNOZ7BVGIWIuc/edit?usp=sharing';
+    'https://docs.google.com/document/d/e/2PACX-1vSspUf8_eiI2TQixma3Yk00tNw3buEhUZco4CvGnpNiqdgXcRrXOX3ksA27HZ7G79o7SO_Dw45h0JB3/pub';
 
 const String defProjectRepo =
     'https://github.com/ChristianGerardHizon/PortfolioV2';

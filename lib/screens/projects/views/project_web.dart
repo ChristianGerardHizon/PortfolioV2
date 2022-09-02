@@ -21,8 +21,8 @@ class ProjectWeb extends StatelessWidget {
         children: [
           const SizedBox(height: 30),
           Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.end,
+            mainAxisAlignment: MainAxisAlignment.end,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Text(
                 '''03.''',
@@ -42,6 +42,12 @@ class ProjectWeb extends StatelessWidget {
                   fontSize: 25,
                 ),
               ),
+              Container(
+                height: 0.5,
+                margin: const EdgeInsets.only(left: 15),
+                width: Constants.getWidth(context) * 0.25,
+                color: Colors.grey,
+              )
             ],
           ),
           const SizedBox(height: 10),

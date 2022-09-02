@@ -60,6 +60,8 @@ class _ExperienceMobileState extends State<ExperienceMobile> {
             const SizedBox(height: 40),
             Row(
               children: [
+                const SizedBox(width: 15),
+
                 // exp selector
                 SizedBox(
                   width: 90,
@@ -120,6 +122,8 @@ class _ExperienceMobileState extends State<ExperienceMobile> {
                     ),
                   ),
                 ),
+                const SizedBox(width: 10),
+
                 // exp view
               ],
             ),

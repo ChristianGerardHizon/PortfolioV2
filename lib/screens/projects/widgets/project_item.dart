@@ -97,7 +97,7 @@ class _ProjectItemState extends State<ProjectItem> {
                               // color: AppColors().textLight,
                               letterSpacing: 1,
                               height: 1.5,
-                              fontSize: 14,
+                              fontSize: 13,
                             ),
                           ),
                         ],
