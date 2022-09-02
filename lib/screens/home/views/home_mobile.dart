@@ -47,7 +47,7 @@ class HomeMobile extends StatelessWidget {
                     ),
                   ),
                   SizedBox(
-                    width: width - (width * 0.23),
+                    width: width - (width * 0.25),
                     child: Padding(
                       padding: const EdgeInsets.only(top: 5),
                       child: Text(
@@ -64,7 +64,7 @@ class HomeMobile extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.only(top: 30),
                     child: SizedBox(
-                      width: width * 0.45,
+                      width: width * 0.7,
                       child: RichText(
                         text: TextSpan(
                           text: Strings.introAbout,

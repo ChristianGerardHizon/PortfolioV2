@@ -56,7 +56,7 @@ class ExperiencePanel extends StatelessWidget {
               final item = list[index];
               return ListTile(
                 contentPadding: EdgeInsets.zero,
-                leading: const Icon(Icons.arrow_right),
+                leading: Icon(Icons.arrow_right, color: color),
                 title: Text(
                   item,
                   style: TextStyle(

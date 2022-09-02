@@ -38,12 +38,12 @@ class ProjectMobile extends StatelessWidget {
                 fontSize: 25,
               ),
             ),
-            Container(
-              height: 0.5,
-              margin: const EdgeInsets.only(left: 15),
-              width: Constants.getWidth(context) * 0.3,
-              color: Colors.grey,
-            )
+            // Container(
+            //   height: 0.5,
+            //   margin: const EdgeInsets.only(left: 15),
+            //   width: Constants.getWidth(context) * 0.3,
+            //   color: Colors.grey,
+            // )
           ],
         ),
         const SizedBox(height: 10),

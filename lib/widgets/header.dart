@@ -69,7 +69,10 @@ class Header extends StatelessWidget {
                   child: Center(
                     child: Text(
                       'Resume',
-                      style: TextStyle(color: color),
+                      style: TextStyle(
+                        color: color,
+                        fontWeight: FontWeight.w500,
+                      ),
                     ),
                   ),
                 ),

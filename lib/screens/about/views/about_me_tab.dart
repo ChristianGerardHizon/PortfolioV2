@@ -43,7 +43,7 @@ class AboutMeTab extends StatelessWidget {
               Container(
                 height: 0.5,
                 margin: const EdgeInsets.only(left: 15),
-                width: Constants.getWidth(context) * 0.2,
+                width: Constants.getWidth(context) * 0.45,
                 color: Colors.grey,
               )
             ],

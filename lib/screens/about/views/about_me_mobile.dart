@@ -43,7 +43,7 @@ class AboutMeMobile extends StatelessWidget {
               Container(
                 height: 0.5,
                 margin: const EdgeInsets.only(left: 15),
-                width: Constants.getWidth(context) * 0.3,
+                width: Constants.getWidth(context) * 0.4,
                 color: Colors.grey,
               )
             ],

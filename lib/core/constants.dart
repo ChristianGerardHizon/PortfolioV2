@@ -96,7 +96,8 @@ List<Experience> defExperience = [
     duration: 'Feb 2018 - Aug 2018',
     duties: [
       'Trained on using Ionic and Angular Frameworks.',
-      'Worked with a team to develop both mobile app and website.'
+      'Worked with a team to develop both mobile app and website.',
+      'Preparing reports on programming project specifications, activities, or status.'
     ],
     position: 'Mobile & Web Developer',
   ),

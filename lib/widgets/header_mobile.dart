@@ -71,7 +71,7 @@ class HeaderMobile extends StatelessWidget {
                 value: -1,
                 child: ListTile(
                   dense: true,
-                  trailing: Icon(Icons.download),
+                  trailing: Icon(Icons.open_in_new, size: 18),
                   horizontalTitleGap: 0,
                   title: Text('Resume'),
                 ),

@@ -56,13 +56,12 @@ class ExperiencePanelMobile extends StatelessWidget {
               final item = list[index];
               return ListTile(
                 contentPadding: EdgeInsets.zero,
-                leading: const SizedBox(
+                leading: SizedBox(
                   width: 2,
-                  child: Icon(Icons.arrow_right, size: 16),
+                  child: Icon(Icons.arrow_right, size: 16, color: color),
                 ),
                 horizontalTitleGap: 0,
                 minVerticalPadding: 0,
-                
                 title: Text(
                   item,
                   style: TextStyle(

@@ -10,6 +10,7 @@ class SocialButtons extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final color = Theme.of(context).primaryColor;
     return SizedBox(
       width: 120,
       child: Column(
@@ -45,8 +46,22 @@ class SocialButtons extends StatelessWidget {
                 log(e.toString());
               }
             },
-            icon: const Icon(
+            icon: Icon(
               FontAwesomeIcons.facebook,
+              color: color,
+            ),
+          ),
+          const SizedBox(height: 20),
+          IconButton(
+            onPressed: () async {
+              try {
+                await launchUrl(Uri.parse(defGithub));
+              } catch (e) {
+                log(e.toString());
+              }
+            },
+            icon: const Icon(
+              FontAwesomeIcons.github,
             ),
           ),
           const SizedBox(height: 20),
@@ -58,22 +73,9 @@ class SocialButtons extends StatelessWidget {
                 log(e.toString());
               }
             },
-            icon: const Icon(
+            icon: Icon(
               FontAwesomeIcons.linkedinIn,
-            ),
-          ),
-          const SizedBox(height: 20),
-
-          IconButton(
-            onPressed: () async {
-              try {
-                await launchUrl(Uri.parse(defGithub));
-              } catch (e) {
-                log(e.toString());
-              }
-            },
-            icon: const Icon(
-              FontAwesomeIcons.github,
+              color: color,
             ),
           ),
 
