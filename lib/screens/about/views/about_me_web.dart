@@ -211,21 +211,25 @@ class _AboutMeWebState extends State<AboutMeWeb> {
                           isHovered = false;
                         });
                       },
-                      child: Container(
-                        width: Constants.getWidth(context) * 0.22,
-                        height: Constants.getWidth(context) * 0.22,
-                        decoration: BoxDecoration(
-                          borderRadius:
-                              const BorderRadius.all(Radius.circular(5)),
-                          image: DecorationImage(
-                            fit: BoxFit.cover,
-                            colorFilter: ColorFilter.mode(
-                              Colors.transparent,
-                              isHovered ? BlendMode.lighten : BlendMode.color,
+                      child: AnimatedSwitcher(
+                        duration: const Duration(milliseconds: 300),
+                        child: Container(
+                          key: ValueKey('aboutme-$isHovered'),
+                          width: Constants.getWidth(context) * 0.22,
+                          height: Constants.getWidth(context) * 0.22,
+                          decoration: BoxDecoration(
+                            borderRadius:
+                                const BorderRadius.all(Radius.circular(5)),
+                            image: DecorationImage(
+                              fit: BoxFit.cover,
+                              colorFilter: ColorFilter.mode(
+                                Colors.transparent,
+                                isHovered ? BlendMode.lighten : BlendMode.color,
+                              ),
+                              image: AssetImage(Assets.images.profile.path),
                             ),
-                            image: AssetImage(Assets.images.profile.path),
+                            color: Colors.transparent,
                           ),
-                          color: Colors.transparent,
                         ),
                       ),
                     ),
