@@ -43,8 +43,8 @@ class AboutMeTab extends StatelessWidget {
               Container(
                 height: 0.5,
                 margin: const EdgeInsets.only(left: 15),
-                // width: AppClass().getMqWidth(context) * 0.2,
-                // color: AppColors().textLight,
+                width: Constants.getWidth(context) * 0.2,
+                color: Colors.grey,
               )
             ],
           ),
@@ -109,6 +109,7 @@ class AboutMeTab extends StatelessWidget {
                         crossAxisCount: 2,
                         shrinkWrap: true,
                         childAspectRatio: 10,
+                        physics: NeverScrollableScrollPhysics(),
                         children: [
                           Row(
                             children: [

@@ -101,7 +101,7 @@ class HomeMobile extends StatelessWidget {
                       },
                       child: Container(
                         height: height * 0.09,
-                        width: width * 0.45,
+                        width: width * 0.60,
                         decoration: BoxDecoration(
                           color: Colors.transparent,
                           borderRadius:

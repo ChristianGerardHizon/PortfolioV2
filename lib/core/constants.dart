@@ -80,7 +80,7 @@ List<Project> defProjects = [
     description:
         'A small proof of concept website and application for the New Zealand company. Connects service workers with customers and help with setting up of appointments and payment.',
     projectURL: '',
-    websiteURL: 'www.matchaservice.co.nz',
+    websiteURL: 'https://www.facebook.com/MatchingServiceNeeds',
     technologies: [
       Technology.ionic,
       Technology.firebase,

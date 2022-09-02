@@ -102,7 +102,7 @@ class HomeTab extends StatelessWidget {
                       },
                       child: Container(
                         height: height * 0.09,
-                        width: width * 0.25,
+                        width: width * 0.35,
                         decoration: BoxDecoration(
                           color: Colors.transparent,
                           borderRadius:

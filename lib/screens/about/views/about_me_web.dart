@@ -50,8 +50,8 @@ class _AboutMeWebState extends State<AboutMeWeb> {
               Container(
                 height: 0.5,
                 margin: const EdgeInsets.only(left: 15),
-                // width: AppClass().getMqWidth(context) * 0.2,
-                // color: AppColors().textLight,
+                width: Constants.getWidth(context) * 0.2,
+                color: Colors.grey,
               )
             ],
           ),
@@ -116,6 +116,7 @@ class _AboutMeWebState extends State<AboutMeWeb> {
                         crossAxisCount: 2,
                         shrinkWrap: true,
                         childAspectRatio: 10,
+                        physics: NeverScrollableScrollPhysics(),
                         children: [
                           Row(
                             children: [
