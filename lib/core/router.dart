@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:go_router/go_router.dart';
-import 'package:hizonchristian/screens/root.dart';
+import '../screens/root.dart';
 
 import 'enums.dart';
 
@@ -11,14 +11,10 @@ final appRouter = GoRouter(
   routes: <GoRoute>[
     GoRoute(
       path: '/',
-      redirect: (_) => '/about',
-    ),
-    GoRoute(
-      path: '/:screen(about|experience|projects|work|contact)',
       builder: (BuildContext context, GoRouterState state) {
-        final String screen = state.params['screen'] as String;
-        final type = fromString(screen);
-        return RootScreen(type: type);
+        // final screen = state.params['screen'] as String;
+        // final type = fromString(screen);
+        return const RootScreen();
       },
     )
   ],

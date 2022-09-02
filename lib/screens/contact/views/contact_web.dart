@@ -1,5 +1,10 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:url_launcher/url_launcher.dart';
+
+import '../../../core/core.dart';
 
 class ContactWeb extends StatelessWidget {
   const ContactWeb({super.key});
@@ -51,7 +56,7 @@ class ContactWeb extends StatelessWidget {
         SizedBox(
           width: 500,
           child: Text(
-            "I'm open for any new opportunities and my inbox is always open. Wether you have a question or just want to say hello. I'll try my best to get back",
+            Strings.contactIntro,
             textAlign: TextAlign.center,
             style: GoogleFonts.roboto(
               // color: AppColors().textLight,
@@ -69,7 +74,13 @@ class ContactWeb extends StatelessWidget {
             side: BorderSide(color: Theme.of(context).primaryColor, width: 2),
             padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 30),
           ),
-          onPressed: () {},
+          onPressed: () async {
+            try {
+              await launchUrl(Uri.parse('mailto: $defEmail'));
+            } catch (e) {
+              log(e.toString());
+            }
+          },
           child: const Text('Say Hello!'),
         ),
       ],

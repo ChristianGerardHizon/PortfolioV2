@@ -8,12 +8,18 @@ class ProjectScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Padding(
-      padding: EdgeInsets.only(bottom: 40),
-      child: ResponsiveLayout(
-        web: ProjectWeb(),
-        tab: ProjectWeb(),
-        mobile: ProjectWeb(),
+    return ResponsiveLayout(
+      web: ConstrainedBox(
+        constraints: const BoxConstraints(),
+        child: const ProjectWeb(),
+      ),
+      tab: ConstrainedBox(
+        constraints: const BoxConstraints(),
+        child: const ProjectTab(),
+      ),
+      mobile: ConstrainedBox(
+        constraints: const BoxConstraints(),
+        child: const ProjectMobile(),
       ),
     );
   }

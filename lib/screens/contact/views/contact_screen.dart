@@ -4,14 +4,23 @@ import '../../../widgets/responsive.dart';
 import 'views.dart';
 
 class ContactScreen extends StatelessWidget {
-  const ContactScreen({Key? key}) : super(key: key);
+  const ContactScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const ResponsiveLayout(
-      web: ContactWeb(),
-      tab: ContactWeb(),
-      mobile: ContactWeb(),
+    return ResponsiveLayout(
+      web: ConstrainedBox(
+        constraints: const BoxConstraints(maxHeight: 750),
+        child: const ContactWeb(),
+      ),
+      tab: ConstrainedBox(
+        constraints: const BoxConstraints(maxHeight: 750),
+        child: const ContactTab(),
+      ),
+      mobile: ConstrainedBox(
+        constraints: const BoxConstraints(maxHeight: 750),
+        child: const ContactMobile(),
+      ),
     );
   }
 }

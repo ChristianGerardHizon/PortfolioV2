@@ -13,15 +13,14 @@ class EmailDetails extends StatelessWidget {
         children: [
           Expanded(flex: 4, child: Container()),
 
-          RotatedBox(
+          const RotatedBox(
             quarterTurns: 1,
             child: Text(
               'christiangerardhizon@gmail.com',
-              style: GoogleFonts.roboto(
-                // color: AppColors().textLight,
+              style: TextStyle(
+                fontSize: 13,
+                fontFamily: 'sfmono',
                 letterSpacing: 1.5,
-                height: 1.5,
-                fontSize: 14,
               ),
             ),
           ),

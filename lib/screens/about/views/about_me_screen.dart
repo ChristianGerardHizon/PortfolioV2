@@ -1,14 +1,18 @@
 import 'package:flutter/material.dart';
 
 import '../../../widgets/responsive.dart';
+import '../about.dart';
+import 'about_me_web.dart';
 
 class AboutMeScreen extends StatelessWidget {
-  const AboutMeScreen({Key? key}) : super(key: key);
+  const AboutMeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return const ResponsiveLayout(
-      web: Text('About Me'),
+      web: AboutMeWeb(),
+      tab: AboutMeTab(),
+      mobile: AboutMeMobile(),
     );
   }
 }

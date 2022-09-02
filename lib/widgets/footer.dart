@@ -1,7 +1,9 @@
-import 'package:flutter/cupertino.dart';
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
+import 'package:url_launcher/url_launcher.dart';
+
+import '../core/constants.dart';
 
 class Footer extends StatelessWidget {
   const Footer({super.key});
@@ -23,7 +25,13 @@ class Footer extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.only(top: 5, bottom: 20),
           child: InkWell(
-            onTap: () {},
+            onTap: () async {
+              try {
+                await launchUrl(Uri.parse(defProjectRepo));
+              } catch (e) {
+                log(e.toString());
+              }
+            },
             child: Text(
               'See source code',
               style: TextStyle(

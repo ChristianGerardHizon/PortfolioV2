@@ -1,15 +1,27 @@
 import 'package:flutter/material.dart';
-import 'package:hizonchristian/widgets/responsive.dart';
+import '../../../widgets/responsive.dart';
+import '../home.dart';
+import 'home_mobile.dart';
+import 'home_tab.dart';
 
 class HomeScreen extends StatelessWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+  const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const ResponsiveLayout(
-      web: Text('Home'),
-      tab: Text('Home'),
-      mobile: Text('Home'),
+    return ResponsiveLayout(
+      web: ConstrainedBox(
+        constraints: const BoxConstraints(maxHeight: 700),
+        child: const HomeWeb(),
+      ),
+      tab: ConstrainedBox(
+        constraints: const BoxConstraints(maxHeight: 700),
+        child: const HomeTab(),
+      ),
+      mobile: ConstrainedBox(
+        constraints: const BoxConstraints(maxHeight: 600),
+        child: const HomeMobile(),
+      ),
     );
   }
 }

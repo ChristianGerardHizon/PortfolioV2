@@ -16,25 +16,22 @@ class ResponsiveLayout extends StatelessWidget {
   Widget build(BuildContext context) {
     return LayoutBuilder(
       builder: (context, constraints) {
-        var height = constraints.maxHeight;
-        final scrWidth = constraints.minWidth;
-        if (height > 1000) height = 1000;
+        final scrWidth = constraints.maxWidth;
 
-        if (scrWidth > 915) {
+        if (scrWidth > 1024) {
           return SizedBox(
-            height: height,
             width: scrWidth,
             child: web,
           );
-        } else if (scrWidth < 650) {
+        }
+
+        if (scrWidth < 650) {
           return SizedBox(
-            height: height,
             width: scrWidth,
             child: mobile,
           );
         }
         return SizedBox(
-          height: height,
           width: scrWidth,
           child: tab,
         );

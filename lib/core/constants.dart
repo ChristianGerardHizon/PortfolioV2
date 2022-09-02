@@ -1,9 +1,12 @@
+import 'package:flutter/widgets.dart';
+
 import 'core.dart';
 
 List<Project> defProjects = [
   Project(
     name: 'TrudeLizares',
-    description: '',
+    description:
+        '''A clothing website that uses Shopify. Did the maintenance, development and updating of the website layout and features''',
     projectURL: '',
     websiteURL: 'https://trudelizares.com',
     technologies: [
@@ -14,9 +17,10 @@ List<Project> defProjects = [
   ),
   Project(
     name: 'Galleon',
-    description: '',
+    description:
+        'An e-commerce website that sell mobile phones and accessories. Handled the maintenance, product updates and development of minor features for their website.',
     projectURL: '',
-    websiteURL: '',
+    websiteURL: 'https://www.galleonent.com',
     technologies: [
       Technology.php,
       Technology.opencart,
@@ -26,7 +30,7 @@ List<Project> defProjects = [
   Project(
     name: 'JuanRide',
     description:
-        'Created using Angular, Shopify and AWS, the ordering system was made to optimize the current manual process of JuanRide and also create an online website where people can order their food. ',
+        'An ordering system that was made to automate their manual process. For Tasked with deveploing the features on their Shopify website and custom order management website.',
     projectURL: '',
     websiteURL: 'https://www.bacolodlifestyle.com/juan-ride-launches-website',
     technologies: [
@@ -37,7 +41,8 @@ List<Project> defProjects = [
   ),
   Project(
     name: 'Panebakery',
-    description: '',
+    description:
+        'Bakery Shop in the US. Maintained and did some minor ui changes and  bug fixes for the ordering setup.',
     projectURL: '',
     websiteURL: 'http://www.panebakery.com',
     technologies: [
@@ -48,7 +53,8 @@ List<Project> defProjects = [
   ),
   Project(
     name: 'Natures Village Resort',
-    description: '',
+    description:
+        'A simple website for the Resort in Talisay. Maintained and handled the changes for the website layouts.',
     projectURL: '',
     websiteURL: 'https://www.naturesvillageresort.com',
     technologies: [
@@ -58,7 +64,8 @@ List<Project> defProjects = [
   ),
   Project(
     name: 'School SOS System',
-    description: '',
+    description:
+        'An notification system for US schools during emergencies. Created the updated android and iOS versions of the app.',
     projectURL: '',
     websiteURL:
         'https://play.google.com/store/apps/details?id=com.stratiumsoftware.school_sos_system_vandamme&hl=en&gl=US',
@@ -70,7 +77,8 @@ List<Project> defProjects = [
   ),
   Project(
     name: 'Match A Service',
-    description: '',
+    description:
+        'A small proof of concept website and application for the New Zealand company. Connects service workers with customers and help with setting up of appointments and payment.',
     projectURL: '',
     websiteURL: 'www.matchaservice.co.nz',
     technologies: [
@@ -81,7 +89,8 @@ List<Project> defProjects = [
   ),
   Project(
     name: 'Mushu',
-    description: '',
+    description:
+        'An mobile application for a local restaurant in Bacolod PH. Allows the user to order and pay for their orders through the app.',
     projectURL: '',
     websiteURL:
         'https://play.google.com/store/apps/details?id=com.stratiumsoftwaregroup.opencartmobile&hl=en_CA&gl=US',
@@ -95,21 +104,57 @@ List<Project> defProjects = [
 
 List<Experience> defExperience = [
   Experience(
-    company: 'HyBrain',
-    duration: '2008 - 2022',
-    duties: [''],
-    position: 'Mobile/Web Developer',
+    company: 'HYBrain',
+    duration: 'Feb 2018 - Aug 2018',
+    duties: [
+      'Trained on using Ionic and Angular Frameworks.',
+      'Worked with a team to develop both mobile app and website.'
+    ],
+    position: 'Mobile & Web Developer',
   ),
   Experience(
     company: 'Stratium Software',
-    duration: '2008 - 2022',
-    duties: [''],
+    duration: 'Aug 2018 - Present',
+    duties: [
+      'Develop Shopify, Angular and Flutter Projects',
+      'Worked with a team to develop both mobile app and website.',
+      'Create technical documentation for projects',
+      'Design and setup Firebase projects'
+    ],
     position: 'Software Developer',
   ),
   Experience(
     company: 'CodeActive',
-    duration: '2008 - 2022',
-    duties: [''],
-    position: 'Mobile Developer',
+    duration: 'Nov 2021 - Present',
+    duties: [
+      'Worked as a Project based web and mobile app developer',
+      'Developed Match a Service and GoSwoof as the sole mobile developer.',
+      'Communicated with international clients to help identify the features they wanted for their app.',
+      'Created CI/CD solutions to projects to ensure the consistency of the different builds',
+    ],
+    position: 'Web & Mobile Developer',
   ),
 ];
+
+const String defEmail = 'christiangerardhizon@gmail.com';
+const String defResumeURL =
+    'https://docs.google.com/document/d/1EH_UDgoAEKwabrxm0fgmiK0WJVCXp0hNOZ7BVGIWIuc/edit?usp=sharing';
+
+const String defProjectRepo =
+    'https://github.com/ChristianGerardHizon/PortfolioV2';
+
+const String defFacebook = 'https://www.facebook.com/christian.gerard.hizon';
+const String defLinkedIn = 'https://www.linkedin.com/in/christiangerardhizon';
+const String defGithub = 'https://github.com/ChristianGerardHizon';
+const String defStackOverflow =
+    'https://stackoverflow.com/users/10476158/mr-roboto';
+
+class Constants {
+  static double getWidth(BuildContext context) {
+    return MediaQuery.of(context).size.width;
+  }
+
+  static double getHeight(BuildContext context) {
+    return MediaQuery.of(context).size.height;
+  }
+}
