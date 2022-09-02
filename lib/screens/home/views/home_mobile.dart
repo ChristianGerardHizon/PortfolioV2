@@ -14,9 +14,8 @@ class HomeMobile extends StatelessWidget {
       builder: (context, constraints) {
         final width = constraints.maxWidth;
         final height = constraints.maxHeight;
-        return Container(
+        return ColoredBox(
           color: Colors.transparent,
-          padding: const EdgeInsets.only(bottom: 50),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
