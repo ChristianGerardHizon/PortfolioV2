@@ -6,7 +6,7 @@ List<Project> defProjects = [
   Project(
     name: 'TrudeLizares',
     description:
-        '''A clothing website that uses Shopify. Maintained and developed the website's layout and features. Also was in charge of managing the website's content''',
+        '''A Shopify website that sells different clothes. Maintained and developed the website's layout and features. Also was in charge of managing the website's content''',
     projectURL: '',
     websiteURL: 'https://trudelizares.com',
     technologies: [
@@ -18,7 +18,7 @@ List<Project> defProjects = [
   Project(
     name: 'Galleon',
     description:
-        'An e-commerce website that sell mobile phones and accessories. Handled the maintenance, product updates and development of minor features for their website.',
+        '''An e-commerce website that sells mobile phones and accessories. Handled the maintenance, product updates and development of features for the website.''',
     projectURL: '',
     websiteURL: 'https://www.galleonent.com',
     technologies: [
@@ -54,7 +54,7 @@ List<Project> defProjects = [
   Project(
     name: '''Nature's Village Resort''',
     description:
-        'A simple website for the Resort in Talisay. Maintained and handled the changes for the website layouts.',
+        '''A simple business website for the Resort in Talisay. Maintained and handled the changes for the website layouts.''',
     projectURL: '',
     websiteURL: 'https://www.naturesvillageresort.com',
     technologies: [
@@ -65,7 +65,7 @@ List<Project> defProjects = [
   Project(
     name: 'School SOS System',
     description:
-        'An notification system for US schools during emergencies. Created the updated android and iOS versions of the app.',
+        ''''A mobile app and an admin website for to be used by US schools during emergencies. Created the updated android and iOS versions of the app.''',
     projectURL: '',
     websiteURL:
         'https://play.google.com/store/apps/details?id=com.stratiumsoftware.school_sos_system_vandamme&hl=en&gl=US',
