@@ -42,7 +42,7 @@ List<Project> defProjects = [
   Project(
     name: 'Panebakery',
     description:
-        '''Bakery Shop in the US. Maintained and did some ui changes and  bug fixes for the ordering setup.''',
+        '''Bakery Shop in the US. Maintained and did some UI changes and  bug fixes for the ordering setup.''',
     projectURL: '',
     websiteURL: 'http://www.panebakery.com',
     technologies: [
