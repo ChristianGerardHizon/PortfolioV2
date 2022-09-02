@@ -53,7 +53,7 @@ class HomeMobile extends StatelessWidget {
                       child: Text(
                         Strings.whatIdo,
                         style: GoogleFonts.robotoSlab(
-                          // color: AppColors().textLight
+                          color: Colors.grey[600],
                           fontWeight: FontWeight.bold,
                           letterSpacing: 3,
                           fontSize: 30,
