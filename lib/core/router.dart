@@ -6,7 +6,6 @@ import '../screens/root.dart';
 import 'enums.dart';
 
 final appRouter = GoRouter(
-  urlPathStrategy: UrlPathStrategy.path,
   initialLocation: '/',
   routes: <GoRoute>[
     GoRoute(
